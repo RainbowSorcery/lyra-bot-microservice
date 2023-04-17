@@ -1,0 +1,8 @@
+server:
+  port: 5702
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: qq-bot-gateway

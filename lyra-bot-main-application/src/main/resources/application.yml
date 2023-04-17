@@ -1,0 +1,8 @@
+server:
+  port: 5701
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: qq-bot-main-application
