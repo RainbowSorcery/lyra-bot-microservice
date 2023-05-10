@@ -2,18 +2,18 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.18.115:8848
+        server-addr: 192.168.18.117:8848
         username: nacos
         password: nacos
 
   datasource:
     username: root
     password: 365373011
-    url: jdbc:mysql://192.168.18.115:3306/lyra_qq_bot_app
+    url: jdbc:mysql://192.168.18.117:3306/lyra_qq_bot_app
     driver-class-name: com.mysql.cj.jdbc.Driver
   data:
     redis:
-      host: 192.168.18.115
+      host: 192.168.18.117
       port: 6379
       password: 365373011
 mybatis-plus:
@@ -24,7 +24,7 @@ logging:
     com.lyra.qqbot.processor: debug
 
 random-pony-image-api:
-  url: http://192.168.18.115:7979
+  url: http://192.168.18.117:7979
   group: /randomImage/pony
   randomLyraImg: /randomLyraImg
   randomBackgroundPonyImage: /randomBackgroundPonyImage

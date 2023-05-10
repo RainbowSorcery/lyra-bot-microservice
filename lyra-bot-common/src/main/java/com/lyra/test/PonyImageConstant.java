@@ -1,4 +1,4 @@
-package com.lyra;
+package com.lyra.test;
 public class PonyImageConstant {
     public static final String BACKGROUND_PONY = "fanfic-colon-background%2Bpony";
     public static final String LYRA_PONY = "lyra+heartstrings";

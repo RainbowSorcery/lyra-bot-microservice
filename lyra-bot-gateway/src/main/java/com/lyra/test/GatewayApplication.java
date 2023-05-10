@@ -1,4 +1,4 @@
-package com.lyra;
+package com.lyra.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

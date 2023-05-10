@@ -1,4 +1,4 @@
-package com.lyra.common.response;
+package com.lyra.test.common.response;
 
 public class Result <T> {
     private Integer code;

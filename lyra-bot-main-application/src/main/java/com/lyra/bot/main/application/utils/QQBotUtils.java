@@ -1,9 +1,9 @@
 package com.lyra.bot.main.application.utils;
 
-import com.lyra.bot.main.application.entity.SendMessageResultEntity;
-import com.lyra.common.enums.HttpAPI;
-import com.lyra.common.enums.MessageType;
 import com.lyra.bot.main.application.config.CqHttpResouce;
+import com.lyra.bot.main.application.entity.SendMessageResultEntity;
+import com.lyra.test.common.enums.HttpAPI;
+import com.lyra.test.common.enums.MessageType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;

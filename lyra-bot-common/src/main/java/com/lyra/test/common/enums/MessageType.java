@@ -1,4 +1,4 @@
-package com.lyra.common.enums;
+package com.lyra.test.common.enums;
 
 public enum MessageType {
     GROUP_MESSAGE("group"),

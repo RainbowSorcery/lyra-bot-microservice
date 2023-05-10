@@ -1,4 +1,4 @@
-package com.lyra;
+package com.lyra.test;
 
 public class LyraBotManagementApplication {
 }

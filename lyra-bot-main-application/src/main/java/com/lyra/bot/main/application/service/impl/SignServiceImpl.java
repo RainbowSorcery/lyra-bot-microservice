@@ -2,6 +2,7 @@ package com.lyra.bot.main.application.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.lyra.bot.main.application.utils.QQBotUtils;
 import com.lyra.bot.main.application.entity.Log;
 import com.lyra.bot.main.application.entity.LoginFromData;
 import com.lyra.bot.main.application.entity.SignResult;
@@ -10,8 +11,7 @@ import com.lyra.bot.main.application.mapper.LogRepository;
 import com.lyra.bot.main.application.service.AuthService;
 import com.lyra.bot.main.application.service.ILogService;
 import com.lyra.bot.main.application.service.ISignService;
-import com.lyra.bot.main.application.utils.QQBotUtils;
-import com.lyra.common.constance.UriConstance;
+import com.lyra.test.common.constance.UriConstance;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.lyra.common.enums;
+package com.lyra.test.common.enums;
 
 public enum QQBotServiceEnum {
     GET_HELP_MESSAGE("/help"),
