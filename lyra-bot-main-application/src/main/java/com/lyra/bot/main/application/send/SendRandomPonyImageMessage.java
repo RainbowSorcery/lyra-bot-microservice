@@ -3,7 +3,7 @@ package com.lyra.bot.main.application.send;
 import com.lyra.bot.main.application.config.PonyWebCrawiersConfig;
 import com.lyra.bot.main.application.utils.QQBotUtils;
 import com.lyra.bot.main.application.entity.PonyImageEntity;
-import com.lyra.test.common.response.Result;
+import com.lyra.common.response.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;

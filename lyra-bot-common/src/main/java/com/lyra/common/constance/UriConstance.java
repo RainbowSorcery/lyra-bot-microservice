@@ -1,4 +1,4 @@
-package com.lyra.test.common.constance;
+package com.lyra.common.constance;
 
 public class UriConstance {
     public static final String LOGIN_URL = " \"auth/login\"";

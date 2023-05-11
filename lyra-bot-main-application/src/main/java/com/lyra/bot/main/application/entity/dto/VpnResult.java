@@ -3,7 +3,7 @@ package com.lyra.bot.main.application.entity.dto;
 /**
  * 东方网络登录返回对象
  */
-public class VpnLoginResult {
+public class VpnResult {
 
     /**
      * 登录返回值 似乎是返回值为1表示登录成功
@@ -29,5 +29,13 @@ public class VpnLoginResult {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+
+    @Override
+    public String toString() {
+        return "VpnResult{" +
+                "ret=" + ret +
+                ", msg='" + msg + '\'' +
+                '}';
     }
 }

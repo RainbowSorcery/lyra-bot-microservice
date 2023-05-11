@@ -3,7 +3,7 @@ package com.lyra.bot.main.application.send;
 import cn.hutool.core.util.StrUtil;
 import com.lyra.bot.main.application.config.PonyWebCrawiersConfig;
 import com.lyra.bot.main.application.service.IRandomSexImgService;
-import com.lyra.test.common.enums.QQBotServiceEnum;
+import com.lyra.common.enums.QQBotServiceEnum;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

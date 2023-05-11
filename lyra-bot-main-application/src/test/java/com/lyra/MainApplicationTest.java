@@ -1,27 +1,40 @@
-package com.lyra.test;
+package com.lyra;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.text.StrBuilder;
 import com.lyra.bot.main.application.QqBotApplication;
 import com.lyra.bot.main.application.entity.dto.VpnLoginDTO;
-import com.lyra.bot.main.application.entity.dto.VpnLoginResult;
+import com.lyra.bot.main.application.entity.dto.VpnResult;
+import com.lyra.bot.main.application.job.SignJob;
+import com.lyra.bot.main.application.service.IVpnSignService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @SpringBootTest
 @ContextConfiguration(classes = QqBotApplication.class)
 public class MainApplicationTest {
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    private IVpnSignService iVpnSignService;
+
+    @Autowired
+    private SignJob signJob;
+
+    @Test
+    public void vpnSingTest() {
+        signJob.sign();
+    }
 
     @Test
     public void test() {
@@ -30,7 +43,7 @@ public class MainApplicationTest {
         vpnLoginDTO.setEmail("365373011@qq.com");
         vpnLoginDTO.setPasswd("qq365373011");
 
-        ResponseEntity<VpnLoginResult> vpnLoginResultResponseEntity = restTemplate.postForEntity("https://panel3.touhou.tel/auth/login", vpnLoginDTO, VpnLoginResult.class);
+        ResponseEntity<VpnResult> vpnLoginResultResponseEntity = restTemplate.postForEntity("https://panel3.touhou.tel/auth/login", vpnLoginDTO, VpnResult.class);
 
         HttpHeaders headers = vpnLoginResultResponseEntity.getHeaders();
 
@@ -45,7 +58,14 @@ public class MainApplicationTest {
             setCookieBuilder.append(item).append(";");
         }
 
-//        restTemplate.postForEntity("https://panel3.touhou.tel/user/checkin", null, )
+
+        MultiValueMap<String, String> httpHeaders = new HttpHeaders();
+        httpHeaders.add("Cookie", setCookieBuilder.toString());
+        HttpEntity<String> stringHttpEntity = new HttpEntity<>("", httpHeaders);
+
+        ResponseEntity<VpnResult> stringResponseEntity = restTemplate.postForEntity("https://panel3.touhou.tel/user/checkin", stringHttpEntity, VpnResult.class);
+
+        System.out.println(stringResponseEntity.getBody());
 
 
     }
