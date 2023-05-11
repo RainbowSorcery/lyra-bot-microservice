@@ -1,4 +1,4 @@
-package com.lyra.bot.main.application.config;
+package com.lyra.scheduler.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

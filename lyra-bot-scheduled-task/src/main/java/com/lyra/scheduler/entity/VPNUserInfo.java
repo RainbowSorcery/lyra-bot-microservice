@@ -1,4 +1,4 @@
-package com.lyra.bot.main.application.entity;
+package com.lyra.scheduler.entity;
 
 
 import jakarta.persistence.Entity;

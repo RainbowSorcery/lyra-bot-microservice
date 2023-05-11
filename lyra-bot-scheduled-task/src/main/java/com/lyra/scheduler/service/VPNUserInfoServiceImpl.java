@@ -1,8 +1,7 @@
-package com.lyra.bot.main.application.service.impl;
+package com.lyra.scheduler.service;
 
-import com.lyra.bot.main.application.entity.VPNUserInfo;
-import com.lyra.bot.main.application.mapper.UserRepository;
-import com.lyra.bot.main.application.service.IVPNUserInfoService;
+import com.lyra.scheduler.entity.VPNUserInfo;
+import com.lyra.scheduler.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.lyra.bot.main.application.service;
+package com.lyra.scheduler.service;
 
 public interface IVpnSignService {
     /**

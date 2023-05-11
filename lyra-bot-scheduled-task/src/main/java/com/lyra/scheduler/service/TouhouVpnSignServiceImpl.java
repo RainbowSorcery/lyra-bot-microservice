@@ -1,27 +1,20 @@
-package com.lyra.bot.main.application.service.impl;
+package com.lyra.scheduler.service;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.text.StrBuilder;
-import com.lyra.bot.main.application.entity.VPNUserInfo;
-import com.lyra.bot.main.application.entity.dto.VpnLoginDTO;
-import com.lyra.bot.main.application.entity.dto.VpnResult;
-import com.lyra.bot.main.application.exception.MyGraceException;
-import com.lyra.bot.main.application.service.IVPNUserInfoService;
-import com.lyra.bot.main.application.service.IVpnSignService;
 import com.lyra.common.enums.VPNTypeEnums;
+import com.lyra.scheduler.entity.dto.VpnLoginDTO;
+import com.lyra.scheduler.entity.dto.VpnResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
-import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * 东方网络签到service

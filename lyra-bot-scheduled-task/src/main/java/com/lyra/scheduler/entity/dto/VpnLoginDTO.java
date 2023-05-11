@@ -1,4 +1,4 @@
-package com.lyra.bot.main.application.entity.dto;
+package com.lyra.scheduler.entity.dto;
 
 public class VpnLoginDTO {
     /**

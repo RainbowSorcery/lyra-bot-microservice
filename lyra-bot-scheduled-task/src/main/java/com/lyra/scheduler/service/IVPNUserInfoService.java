@@ -1,6 +1,7 @@
-package com.lyra.bot.main.application.service;
+package com.lyra.scheduler.service;
 
-import com.lyra.bot.main.application.entity.VPNUserInfo;
+
+import com.lyra.scheduler.entity.VPNUserInfo;
 import org.springframework.data.domain.Example;
 
 import java.util.List;

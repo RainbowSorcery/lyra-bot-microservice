@@ -1,7 +1,7 @@
-package com.lyra.bot.main.application.mapper;
+package com.lyra.scheduler.repository;
 
 
-import com.lyra.bot.main.application.entity.VPNUserInfo;
+import com.lyra.scheduler.entity.VPNUserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

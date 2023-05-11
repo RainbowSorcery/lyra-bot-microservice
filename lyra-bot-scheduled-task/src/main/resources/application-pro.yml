@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.18.115:8848
+        username: nacos
+        password: nacos
+  datasource:
+    username: root
+    password: 365373011
+    url: jdbc:mysql://192.168.18.117:3306/lyra_qq_bot_scheduler
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: 192.168.18.115
+      port: 6379
+      password: 365373011
+mybatis-plus:
+  configuration:
+    log-i mpl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    com.lyra.qqbot.processor: debug
+
+  weather:
+    public-key: U0E730BB18
+    secret-key: zp79vxlbj2ojus2y

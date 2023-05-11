@@ -13,6 +13,7 @@
         <module>lyra-bot-main-application</module>
         <module>lyra-bot-gateway</module>
         <module>lyra-bot-management</module>
+        <module>lyra-bot-scheduled-task</module>
     </modules>
 
     <parent>

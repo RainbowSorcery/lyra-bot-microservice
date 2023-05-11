@@ -1,9 +1,9 @@
-package com.lyra.bot.main.application.job;
+package com.lyra.scheduler.job;
 
 
-import com.lyra.bot.main.application.service.IVPNUserInfoService;
-import com.lyra.bot.main.application.service.IVpnSignService;
 import com.lyra.common.enums.VPNTypeEnums;
+import com.lyra.scheduler.service.IVPNUserInfoService;
+import com.lyra.scheduler.service.IVpnSignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -15,7 +15,6 @@ public class SignJob {
 
     @Autowired
     private IVPNUserInfoService vpnUserInfoService;
-
 
     @Scheduled(cron = "0 0 3 * * ?")
     public void sign() {
