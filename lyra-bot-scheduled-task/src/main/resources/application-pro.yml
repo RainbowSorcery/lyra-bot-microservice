@@ -8,11 +8,11 @@ spring:
   datasource:
     username: root
     password: 365373011
-    url: jdbc:mysql://192.168.18.117:3306/lyra_qq_bot_scheduler
+    url: jdbc:mysql://192.168.18.127:3306/lyra_qq_bot_scheduler
     driver-class-name: com.mysql.cj.jdbc.Driver
   data:
     redis:
-      host: 192.168.18.115
+      host: 192.168.18.127
       port: 6379
       password: 365373011
 mybatis-plus:
