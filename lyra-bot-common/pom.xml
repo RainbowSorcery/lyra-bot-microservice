@@ -19,6 +19,8 @@
         <huttool.version>5.8.16</huttool.version>
     </properties>
 
+    <packaging>pom</packaging>
+
     <dependencies>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
