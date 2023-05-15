@@ -15,9 +15,6 @@ spring:
       host: 192.168.18.127
       port: 6379
       password: 365373011
-mybatis-plus:
-  configuration:
-    log-i mpl: org.apache.ibatis.logging.stdout.StdOutImpl
 logging:
   level:
     com.lyra.qqbot.processor: debug
